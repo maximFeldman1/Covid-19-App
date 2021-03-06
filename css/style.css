@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+html {
+  --red: #c52639;
+  --red2: #e1163f;
+  --dark: #2c2c2c;
+  --gray: #b1b4b9;
+}
+
+.container {
+  position: relative;
+  display: block;
+}
+
+.options button {
+  margin: 5px;
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 25px; 
+}
+
+.btns{
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: center;
+}
+.options button:hover {
+    cursor: pointer;
+    background: red;
+    color:white;
+    transition-duration: 0.6s;
+}
+
+.container-info-countries{
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+span{
+    font-size: 1.3rem;
+    padding-left: 15px;
+   font-weight: bold;
+      
+}
+
+.container::after {
+  content: "";
+  background: url(../img/corona-virus.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+
+  z-index: -2;
+}
+
+.container-chart-container {
+  position: relative;
+  height: 70vh;
+  border-radius: 10px;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 600px;
+  height: 420px;
+  background: none;
+}
+.body {
+  position: absolute;
+  top: 16.5%;
+  left: 40%;
+  width: 20%;
+  height: 28%;
+  background: var(--grey);
+  border-radius: 50%;
+  animation: 5s roll infinite alternate;
+}
+.details {
+  position: absolute;
+  height: 23%;
+  width: 70%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.r-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(-45deg);
+  left: -17%;
+}
+.m-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(90deg);
+  left: -17%;
+}
+.mm-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(0deg);
+  left: -17%;
+}
+.l-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(45deg);
+  right: -17%;
+}
+
+.shapes {
+  position: absolute;
+  height: 23%;
+  width: 70%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.b-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  left: -10%;
+  bottom: -11%;
+  background: chartreuse;
+  border-radius: 50%;
+}
+.t-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  right: -10%;
+  top: -11%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.rb-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  right: -10%;
+  bottom: -11%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.tm-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  right: 40%;
+  top: -30%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.lm-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  left: -30%;
+  bottom: 41%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.rm-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  right: -30%;
+  bottom: 41%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.bm-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  right: 40.5%;
+  bottom: -30%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.lt-shape {
+  position: absolute;
+  height: 18%;
+  width: 18%;
+  left: -10%;
+  top: -12%;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+.sm-details {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+.r-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(-45deg);
+  left: -17%;
+}
+.m-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(90deg);
+  left: -17%;
+}
+.mm-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(0deg);
+  left: -17%;
+}
+.l-detail {
+  position: absolute;
+  background: var(--red);
+  top: 45%;
+  width: 135%;
+  height: 9%;
+  transform: rotate(45deg);
+  right: -17%;
+}
+
+.sm-shapes {
+  position: absolute;
+  height: 23%;
+  width: 70%;
+  width: 88%;
+  height: 88%;
+  top: 7%;
+  left: 7%;
+  transform: rotate(24deg);
+  z-index: -1;
+}
+.b-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  left: -12%;
+  bottom: -10%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.t-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  right: -10%;
+  top: -12%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.rb-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  right: -6%;
+  bottom: -9%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.tm-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  right: 42%;
+  top: -33%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.lm-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  left: -32%;
+  bottom: 44%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.rm-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  right: -30%;
+  bottom: 42.5%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.bm-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  right: 44%;
+  bottom: -30%;
+  background: var(--red);
+  border-radius: 50%;
+}
+.lt-shape {
+  position: absolute;
+  height: 16%;
+  width: 16%;
+  left: -9%;
+  top: -10%;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+.centered {
+  position: absolute;
+  top: 16.5%;
+  left: 40%;
+  margin: 0 auto;
+  width: 20%;
+  height: 28%;
+  background: var(--grey);
+  background-image: radial-gradient(#b1b4b9, #a9acb1);
+  box-shadow: 0px 0px 16px 2px var(--red);
+  border-radius: 50%;
+  z-index: 0;
+}
+.text {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-size: 1.025rem;
+  color: var(--dark);
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  margin: 42.5% 10%;
+}
+
+.message {
+  font-family: "Cutive Mono", monospace;
+  color: var(--red);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  margin: 42.5% 10%;
+  text-align: center;
+  text-shadow: 0 0 2px var(--red), 0 0 4px var(--red), 0 0 16px var(chartreuse);
+}
+
+@keyframes roll {
+  to {
+    transform: rotate(360deg) scale(0.95);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 400px;
+    height: 280px;
+  }
+  .centered.text {
+    font-size: 0.8rem;
+  }
+  .body,
+  .centered {
+    left: 35%;
+  }
+  .message {
+    font-size: 1.25rem;
+    margin: 42.5% 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .centered .text {
+    font-size: 0.8rem;
+  }
+  .body,
+  .centered {
+    left: 30%;
+  }
+  .message {
+    font-size: 1.25rem;
+    margin: 42.5% 0;
+  }
+}
